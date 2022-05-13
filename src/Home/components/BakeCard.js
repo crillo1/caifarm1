@@ -10,7 +10,7 @@ import Divider from "@mui/material/Divider";
 import { styled } from "@mui/system";
 import { useLocation } from "react-router-dom";
 import Web3 from "web3";
-import treasuryImg from "../../assets/treasury.png"
+import treasuryImg from "../../assets/treasury.gif"
 import profitImg from "../../assets/profit.png"
 
 import PriceInput from "../../components/PriceInput";
@@ -181,11 +181,12 @@ export default function BakeCard() {
     <div>
       <div className="auxContent">
         <div className="box leftBox contractInfoCard" >
+        <div className="mt-5"></div>
           <div style={{display: "flex"}}>
             <img src={treasuryImg}></img>
             <div>
               {<div className="dataRow">
-              <div className="name"><h5>Contract holdings</h5>
+              <div className="name"><h5>CaiFarm Contract</h5>
               </div>
               <div className="value"><h5>{contractBNB} ECH</h5></div>
 
@@ -195,23 +196,24 @@ export default function BakeCard() {
           <Box paddingTop={1}>
             
           </Box>
+          
         </div>
         <div className="box leftBox profitInfoCard">
           <div style={{display: "flex"}}>
             <img src={profitImg}></img>
             <div>
-              <h5>Daily ROI</h5>
-              <h6>5 %</h6>
+              <h5>Daily Returns</h5>
+              <h5>5 %</h5>
             </div>
           </div>
-          <Box paddingTop={1}>
+          <Box paddingTop={3}>
             <div className="dataRow">
-              <div className="name">APR</div>
-              <div className="value">1,880 %</div>
+              <div className="name"><h5>Total Return</h5></div>
+              <div className="value"><h5>2,340 %</h5></div>
             </div>
             <div className="dataRow">
-              <div className="name">Dev</div>
-              <div className="value">4 %</div>
+              <div className="name"><h5>Deposit Fee</h5></div>
+              <div className="value"><h5>5 %</h5></div>
             </div>
           </Box>
         </div>
@@ -219,22 +221,40 @@ export default function BakeCard() {
       <div className="mainContent">
         <div className="box leftBox">
           {loading && <LinearProgress color="secondary" />}
-          <Typography variant="h5" style={{color:"white", fontFamily:"sans-serif", fontSize:"25px"}}>
-            <b>CHEF CAI WILL GRILL YOUR FISH</b>
+          <Typography variant="h5" style={{color:"purple", fontFamily:"monospace", fontSize:"16px"}}>
+            <h4><b>Chef Cai's recommended recipe for the most tastiest fish: </b></h4>
+          <div>
+          <h4><b></b></h4>
+            </div>
+          </Typography>
+          <Typography variant="h4" style={{color:"purple", fontFamily:"monospace", fontSize:"16px"}}>
+            <div>
+              <h5><b>RE-GRILL 6 Days/week and EAT 1 Day/week</b></h5>
+            </div>
+          <div>
+          <h4><b></b></h4>
+            </div>
+          </Typography>
+          <Typography variant="h5" style={{color:"black", fontFamily:"sans-serif", fontSize:"16px"}}>
+            <h4><b>................................................................</b></h4>
+          <div>
+          <h4><b></b></h4>
+            </div>
           </Typography>
           <div>
             {/*<div className="dataRow">
               <div className="name">Contract</div>
               <div className="value">{contractBNB} BNB</div>
               </div>*/}
-            <div style={{color:"blue", marginTop:"20px"}}>Your stats</div>
+            <div style={{color:"blue", marginTop:"30px"}}></div>
             <div className="dataRow">
-              <div className="name">Wallet</div>
-              <div className="value">{walletBalance.bnb} ECH</div>
+              <div className="name"><h5><b>ECH in your wallet:</b></h5></div>
+              <div className="mt-4"></div>
+              <div className="value"><h4><b>{walletBalance.bnb}💜</b></h4>  </div>
             </div>
             <div className="dataRow">
-              <div className="name"> Your fishes</div>
-              <div className="value">{walletBalance.beans}</div>
+              <div className="name"> <h5><b>Your fishes:</b></h5></div>
+              <div className="value"><h4><b>{walletBalance.beans}🐟</b></h4></div>
             </div>
 
             <Box >
@@ -245,7 +265,7 @@ export default function BakeCard() {
                   onChange={(value) => onUpdateBakeBNB(value)}
                 />
               </Box>
-              <Box marginTop={2} marginBottom={0}>
+              <Box marginTop={5} marginBottom={3}>
                 <Button
                   className="button1"
                   color="secondary"
@@ -254,14 +274,9 @@ export default function BakeCard() {
                   disabled={wrongNetwork || !address || +bakeBNB === 0 || loading}
                   onClick={bake}
                 >
-                  <b>GRILL FISH</b>
+                  <b>♨️ GRILL FISH ♨️</b>
                 </Button>
               </Box>
-              {/* <Divider /> */}
-              {<div className="dataRow">
-                <div className="name"><h4>Rewards:</h4></div>
-                <div className="value"><h4>{walletBalance.rewards} ECH</h4></div>
-              </div>}
 
               {<ButtonContainer container>
                 <Grid item flexGrow={1} marginRight={1} marginTop={3}>
@@ -273,7 +288,7 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={reBake}
                   >
-                    <b>RE-GRILL</b>
+                    <b>💱 RE-GRILL</b>
                   </Button>
                 </Grid>
                 <Grid item flexGrow={1} marginLeft={1} marginTop={3}>
@@ -285,11 +300,17 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={eatBeans}
                   >
-                    <b>EAT FISH</b>
+                    <b>🍴 EAT FISH</b>
                   </Button>
                 </Grid>
               </ButtonContainer>}
             </Box>
+            <div className="mt-5"></div>
+              {/* <Divider /> */}
+              {<div className="dataRow">
+                <div className="rewards"><h3><b>💰 Rewards:</b></h3></div>
+                <div className="value"><h3><b>{walletBalance.rewards} ECH</b></h3></div>
+              </div>}
           </div>
         </div>
         {/*<div className="box leftBox">

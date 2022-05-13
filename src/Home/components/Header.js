@@ -12,7 +12,7 @@ const Wrapper = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     h5: {
       fontSize: 20,
-      margin: 0,
+      margin: 10,
     },
   },
 }));
@@ -20,15 +20,14 @@ const Wrapper = styled("div")(({ theme }) => ({
 export default function Header() {
   return (
     <Wrapper>
-      <img src={logo} alt="" width={"100%"} style={{ marginTop: -48 }} />
+      <img src={logo} alt="" width={"100%"} style={{ marginTop: -30 }} />
       <Connect responsive={false} />
       <Typography variant="h6" marginTop={-3} style={{color: "#febf33"}}>
-        Chef Cai will grill your fish for a very low fee and a 5% daily return
       </Typography>
       <div>
         <Grid container direction="row" spacing={2} style={{width:"100%", display:"flex", justifyContent:"space-evenly"}}>
           <Grid item xs={6} sm={6} md={6} lg={6}>
-            {/* <Button
+            {/* <Button /*
               className="stake-button, staking-button"
               variant="contained"
               color="white"
@@ -40,7 +39,7 @@ export default function Header() {
             {/* </Button> */}
           </Grid>
           <Grid item xs={6} sm={6} md={6} lg={6}>
-            {/* <Button
+            {/* <Button /*
               className="stake-button, staking-button"
               variant="contained"
               color="white"

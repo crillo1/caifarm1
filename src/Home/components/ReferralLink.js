@@ -9,17 +9,17 @@ const CardWrapper = styled(Card)({
 });
 
 const Input = styled("input")(({ theme }) => ({
-  fontSize: 14,
+  fontSize: 16,
   fontWeight: 300,
   padding: "5px 20px",
   marginRight: "10px",
   borderRadius: "5px",
-  border: "2px solid #0cbbfa",
-  backgroundColor: "transparent",
+  border: "2px solid #ffffff",
+  backgroundColor: "#7efadf",
   width: "100%",
   outline: "none",
   // color: theme.palette.primary.main,
-  color: "yellow",
+  color: "black",
   maxWidth:"85%"
 }));
 
@@ -40,14 +40,14 @@ export default function ReferralLink({ address }) {
   return (
     <div className="referral">
       <h1>Referral Link</h1>
-      <p>Earn 11% of the ECH used by your referral to buy and grill fish</p>
+      <p><h5>Earn 11% of the ECH used by your referral to buy and grill fish</h5></p>
       <div class="refWrapper">
         <Input value={address ? link : ""} readOnly />
         <div 
           class="copyButton"
           onClick={e => copyfunc(address ? link : "")}
           >
-            <b>COPY</b>
+            <h4>COPY</h4>
         </div>
       </div>
 

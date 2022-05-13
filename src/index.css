@@ -25,7 +25,7 @@ code {
   /* background-image: url(./assets/background.jpg); #47faff;*/
 
   /* background-color: #3f1809; */
-  background:  #59bb7d;
+  background: radial-gradient(#39f7d0, #42eb86);
   min-height: 100vh;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -36,9 +36,9 @@ code {
 }
 
 .home .container {
-  width: 1200px;
+  width: 1100px;
   max-width: 100%;
-  padding: 0 10px;
+  padding: 5 5px;
   margin: 0 auto;
   position: relative;
 }
@@ -47,7 +47,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 0 0;
+  padding: 10px 0 0;
   /* color: white; */
 }
 
@@ -69,52 +69,53 @@ code {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  font-family: monospace;
 }
 
 @media (max-width: 765px) {
   .home .header .socialMedias {
-      width: 50%;
+      width: 100%;
       text-align: center;
-      margin: 15px auto;
+      margin: 20px auto;
   }
 }
 
 .home .header .socialMedias a {
-  margin: 0 15px;
+  margin: 0 10px;
   color:white;
 }
 
 @media (max-width: 765px) {
   .home .header .socialMedias a {
-    margin: 0 15px;
+    margin: 0 10px;
     visibility: hidden;
   }
 }
 
 .home .header .socialMedias img {
-  width: 15%;
+  width: 40%;
   text-align: left;
 }
 
 @media (max-width: 765px) {
   .home .header .socialMedias img {
-    width: 20%;
+    width: 100%;
     /* margin-left: -35px; */
   }
 }
 
 .home .header .walletWrapper {
-  font-family: cursive;
-  font-family: "mooncheese";
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 200px;
+  background: linear-gradient(to bottom right, #39f7d0, #be4ce4);
   color: rgb(0, 0, 0);
-  font-size: 16px;
-  padding: 5px 30px;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 10px;
+  font-size: 18px;
+  font-family: monospace;
+  padding: 10px 30px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
   text-align: center;
   font-weight: 700;
 }
@@ -124,24 +125,24 @@ code {
       margin-left: auto;
       width: 150px;
       font-size: 15px;
-      padding: 5px 0;
+      padding: 20px 0;
   }
 }
 
 .home .header .walletWrapper:hover {
-  background-color: white;
-  color: green;
+  background-color: #307522;
+  color: rgb(255, 255, 255);
 }
 
 .home .logo {
-  margin-top: 50px;
+  margin-top: 5px;
   width: 500px;
 }
 
 @media (max-width: 765px) {
   .home .logo {
       width: 350px;
-      margin: 20px auto;
+      margin: 10px auto;
   }
 }
 
@@ -170,6 +171,7 @@ code {
   grid-gap: 20px;
   gap: 20px;
   margin-top: 20px;
+  font-family: monospace;
 }
 
 @media (max-width: 765px) {
@@ -196,18 +198,19 @@ code {
   justify-content: space-between;
   width: 700px;
   max-width: 100%;
-  margin: 50px auto 0;
+  margin: 5px auto 0;
   display: flex;
   justify-content: center;
   align-items: stretch;
   grid-gap: 20px;
-  gap: 20px;
-  padding: 25px;
+  gap: 10px;
+  padding: 20px;
+  font-family: monospace;
 }
 
 @media (max-width: 765px) {
   .home .auxContent {
-      margin: 30px auto 0;
+      margin: 20px auto 0;
       align-items: center;
       flex-direction: column;
       grid-gap: 10px;
@@ -216,33 +219,34 @@ code {
 }
 
 .home .auxContent img {
-  width: 3.5rem;
+  width: 4rem;
   height: fit-content;
   margin-right: 10px;
 }
 
 .home .auxContent h5 {
   justify-content: space-between;
-  font-family: sans-serif;
-    font-weight: bold;
+  font-family: monospace;
+    
     color: white;
 }
 
 .home .auxContent h6 {
-  /* font-family: sans-serif;
-    font-weight: bold; */
+  font-family: monospace;
+    font-weight: bold;
     color: white;
 }
 
 .home .mainContent {
-  width: 800px;
+  width: 1000px;
   max-width: 100%;
-  margin: 50px auto 0;
+  margin: 5px auto 0;
   display: flex;
   justify-content: center;
   align-items: stretch;
   grid-gap: 20px;
   gap: 20px;
+  font-family: monospace;
 }
 
 @media (max-width: 765px) {
@@ -256,19 +260,21 @@ code {
 }
 
 .home .leftBox {
-  padding: 25px;
+  padding: 15px;
   /* background: #FA89F6; */
-  background: #59aa7b;
+  background: radial-gradient(#39f7d0, #42eb86);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
 }
 
 .home .contractInfoCard {
   justify-content: space-between;
-  background: #59aa7b;
+  background: radial-gradient(#39f7d0, #42eb86);
 }
 
 .home .profitInfoCard {
-  background: #59aa7b;
+  background: radial-gradient(#39f7d0, #42eb86);
+  
 }
 
 .home .dataRow {
@@ -279,12 +285,21 @@ code {
   color: white;
   font-size: 15px;
   /* line-height: 35px; */
+  font-family: monospace;
 }
 
 .home .dataRow .value {
   /* font-weight: 600; */
   font-size: 15px;
-  color: white;
+  color: #be4ce4;
+  font-family: monospace;
+}
+
+.home .dataRow .rewards {
+  /* font-weight: 600; */
+  font-size: 15px;
+  color: purple;
+  font-family: monospace;
 }
 
 .home .rightBox {
@@ -303,12 +318,13 @@ code {
 }
 
 .home .mainContent .contractInfo {
-  background: rgb(107, 255, 164);
+  background: radial-gradient(#39f7d0, #42eb86);
   border-radius: 20px;
   padding: 20px;
   display: flex;
   align-content: center;
   justify-content: space-between;
+  font-family: monospace;
 }
 
 .home .mainContent .contractInfo img {
@@ -318,11 +334,13 @@ code {
 
 .home .referral {
   /* font-family: cursive; */
-  width: 800px;
-  background: #59aa7b;
+  width: 500px;
+  background: radial-gradient(#39f7d0, #42eb86);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 20px;
   margin-top: 20px;
+  font-family: monospace;
 }
 
 .home .referral h1 {
@@ -330,35 +348,42 @@ code {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
+  font-family: monospace;
 }
 
 .home .referral p {
   font-size: 15px;
   /* font-family: "Inter",sans-serif !important; */
-  color: white;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
 }
 
 .home .referral .refWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px;
 }
 
 .home .referral .refWrapper .copyButton {
+  background: linear-gradient(to bottom right, #39f7d0, #be4ce4);
+  color: #39f7d0;
   border: 2px solid #000000;
   box-sizing: border-box;
-  border-radius: 5px;
-  padding: 5px 20px;
+  border-radius: 3px;
+  padding: 1px 15px;
   color: #000000;
   /* font-family: "Inter",sans-serif; */
-  font-size: 14px;
+  font-size: 8px;
 }
 
 .home .referral .refWrapper .copyButton:hover {
   cursor: pointer;
-  border: 2px solid yellow;
-  color: yellow;
-
+  border: 2px solid white;
+  color: white;
+  background: #307522 !important;
+  font-family: monospace;
+  
 }
 
 a {
@@ -366,25 +391,31 @@ a {
 }
 
 .button1 {
-  color: #71fe6c !important;
+  color: linear-gradient(to bottom right, #39f7d0, #42eb86);
   box-shadow: none !important;
   border: 2px solid #000000 !important;
   border-radius: 5px !important;
-  background: transparent !important;
-  height: 47px;
+  background: linear-gradient(to bottom right, #39f7d0, #be4ce4);
+  height: 45px;
+  font-family: monospace;
 }
 
 .button1:hover {
-  color: #dc6cfe !important;
-  border: 2px solid #71fe6c;
+  color: #ffffff !important;
+  border: 5px solid #f0f0f0;
   border-radius: 5px !important;
+  background: #307522 !important;
+  background: radial-gradient(#307522, #42eb86);
 }
 
 .home .container .footer {
-  margin: 120px auto 0;
+  margin: 10px auto 0;
+  font-family: monospace;
 }
 
 .home .container .footer a {
   color: white;
-  padding: 10px;
+  padding: 30px;
+  font-family: monospace;
 }
+

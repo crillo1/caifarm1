@@ -9,7 +9,7 @@ import { styled } from "@mui/system";
 
 const CardWrapper = styled(Card)({
   background: "rgb(255 252 248)",
-  marginBottom: 24,
+  marginBottom: 10,
 });
 
 const nutritionFacts = [

@@ -13,9 +13,12 @@ import imgLogo from '../assets/logo.png';
 import nutritionImage from '../assets/nutrition.jpg';
 // import imgRat from '../assets/'
 import { config } from "../config";
-import esIcon from "../assets/ESIcon.png";
+import caiIcon from "../assets/CAIIcon.png";
+import esIcon from "../assets/ESIcon.gif";
 import tgIcon from "../assets/TGIcon.png";
 import twIcon from "../assets/TWIcon.png";
+import webIcon from "../assets/WEBIcon.png";
+
 import img1 from "../assets/img1.png"
 const Wrapper = styled("div")(({ theme }) => ({
   // maxWidth: 800,
@@ -37,12 +40,16 @@ export default function Home() {
             <div className="socialMedias">
               <img src={img1}/>
               <a href="https://caimancoin.com/" target="__blank">
-                {/* <img src={twIcon} alt="" width={27} height={22} /> */}
-                Back
+                <h5>CAIMANCOIN.</h5>
               </a>
               <a href={config.scanLink} target="__blank">
-                {/* <img src={esIcon} alt="" width={27} height={27} /> */}
-                Contract
+                <h5>CONTRACT.</h5>
+              </a>
+              <a href="https://twitter.com/caiman_coin" target="__blank">
+                <h5>TWITTER.</h5>
+              </a>
+              <a href="https://t.me/caimancoin" target="__blank">
+              <h5>TELEGRAM.</h5>
               </a>
             </div>
             <div className="walletWrapper" align='middle'>
@@ -89,22 +96,18 @@ export default function Home() {
           </div>
           <div className="footer">
             <div style={{display:"flex", justifyContent:"center"}}>
-
-            <a href={config.scanLink} target="__blank">
-                {/* <img src={esIcon} alt="" width={27} height={27} /> */}
-                Caimancoin
-              </a>
               <a href={config.scanLink} target="__blank">
-                {/* <img src={esIcon} alt="" width={27} height={27} /> */}
-                Contract
+                {<img src={esIcon} alt="" width={27} height={27} />}
+
+                <b>Contract</b>
               </a>
-              <a href="https://twitter.com/BakedBeansMiner" target="__blank">
-                {/* <img src={twIcon} alt="" width={27} height={22} /> */}
-                Twitter
+              <a href="https://twitter.com/caiman_coin" target="__blank">
+                {<img src={twIcon} alt="" width={27} height={22} />}
+                <b>Twitter</b>
               </a>
-              <a href="https://twitter.com/BakedBeansMiner" target="__blank">
-                {/* <img src={twIcon} alt="" width={27} height={22} /> */}
-                Telegram
+              <a href="https://t.me/caimancoin" target="__blank">
+                {<img src={tgIcon} alt="" width={27} height={22} />}
+                <b>Telegram</b>
               </a>
               <a href="" target="__blank">
                 {/* <img src={tgIcon} alt="" width={27} height={23} /> */}
