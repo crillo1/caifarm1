@@ -282,7 +282,7 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={reBake}
                   >
-                    <b>💱 RE-GRILL</b>
+                    <b>💱 RE-GRILL 💱</b>
                   </Button>
                 </Grid>
                 <Grid item flexGrow={1} marginLeft={1} marginTop={3}>
@@ -294,7 +294,7 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={eatBeans}
                   >
-                    <b>🍴 EAT FISH</b>
+                    <b>🍴 EAT FISH 🍴</b>
                   </Button>
                 </Grid>
               </ButtonContainer>}

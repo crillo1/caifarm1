@@ -40,16 +40,7 @@ export default function Home() {
             <div className="socialMedias">
               <img src={img1}/>
               <a href="https://caimancoin.com/" target="__blank">
-                <h5>CAIMANCOIN.</h5>
-              </a>
-              <a href={config.scanLink} target="__blank">
-                <h5>CONTRACT.</h5>
-              </a>
-              <a href="https://twitter.com/caiman_coin" target="__blank">
-                <h5>TWITTER.</h5>
-              </a>
-              <a href="https://t.me/caimancoin" target="__blank">
-              <h5>TELEGRAM.</h5>
+                <h5>CAIMANCOIN.C</h5>
               </a>
             </div>
             <div className="walletWrapper" align='middle'>
