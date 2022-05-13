@@ -64,7 +64,7 @@ code {
 }
 
 .home .header .socialMedias {
-  width: 200px;
+  width: 100px;
   text-align: left;
   align-items: center;
   display: flex;
@@ -74,7 +74,7 @@ code {
 
 @media (max-width: 765px) {
   .home .header .socialMedias {
-      width: 100%;
+      width: 30%;
       text-align: center;
       margin: 20px auto;
   }
@@ -99,7 +99,7 @@ code {
 
 @media (max-width: 765px) {
   .home .header .socialMedias img {
-    width: 100%;
+    width: 40%;
     /* margin-left: -35px; */
   }
 }

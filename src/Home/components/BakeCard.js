@@ -235,12 +235,6 @@ export default function BakeCard() {
           <h4><b></b></h4>
             </div>
           </Typography>
-          <Typography variant="h5" style={{color:"black", fontFamily:"sans-serif", fontSize:"16px"}}>
-            <h4><b>................................................................</b></h4>
-          <div>
-          <h4><b></b></h4>
-            </div>
-          </Typography>
           <div>
             {/*<div className="dataRow">
               <div className="name">Contract</div>
