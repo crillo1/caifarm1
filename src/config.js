@@ -1,6 +1,6 @@
 export const config = {
   chainId: 3000,
-  contractAddress: "0xA7277795b4e97B176EDf8081b9E7FA59B8A5CEAf",
+  contractAddress: "0x6067cfB0dCA45c1e65063ecFd9AD5188b4A554F9",
   scanLink:
-    "https://scout.ech.network/address/0xA7277795b4e97B176EDf8081b9E7FA59B8A5CEAf"
+    "https://scout.ech.network/address/0x6067cfB0dCA45c1e65063ecFd9AD5188b4A554F9"
 };
