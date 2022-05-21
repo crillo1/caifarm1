@@ -7,6 +7,7 @@ import RewardsInfo from "./components/RewardsInfo";
 import ContractInfoCard from "./components/ContractInfo";
 import ProfitInfoCard from "./components/ProfitInfo";
 import ReferralLink from "./components/ReferralLink";
+import Info from "./components/Info";
 import { useAuthContext } from "../providers/AuthProvider";
 import Footer from "./components/Footer";
 import imgLogo from '../assets/logo.png';
@@ -84,6 +85,9 @@ export default function Home() {
           </div> */}
           <div style={{display:"flex", justifyContent:"center"}}>
             <ReferralLink address={address} />
+          </div>
+          <div style={{display:"flex", justifyContent:"center"}}>
+            <Info address={address} />
           </div>
           <div className="footer">
             <div style={{display:"flex", justifyContent:"center"}}>

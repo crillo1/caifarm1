@@ -178,6 +178,8 @@ export default function BakeCard() {
 
 
   return (
+
+    
     <div>
       <div className="auxContent">
         <div className="box leftBox contractInfoCard" >
@@ -193,9 +195,6 @@ export default function BakeCard() {
             </div>}
             </div>
           </div>
-          <Box paddingTop={1}>
-            
-          </Box>
           
         </div>
         <div className="box leftBox profitInfoCard">
@@ -218,6 +217,7 @@ export default function BakeCard() {
           </Box>
         </div>
       </div>
+          
       <div className="mainContent">
         <div className="box leftBox">
           {loading && <LinearProgress color="secondary" />}

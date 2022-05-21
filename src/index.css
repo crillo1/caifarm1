@@ -2,7 +2,6 @@
 
 
 
-
 body {
   margin: 0;
   font-family: "mooncheese", 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,14 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: radial-gradient(circle at top right,rgba(68, 23, 94, 0.9) 0,#ff7cde 25%);
 }
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 .home {
   /* background-image: url(./assets/background.jpg); #47faff;*/
@@ -330,6 +321,35 @@ code {
 .home .mainContent .contractInfo img {
   width: 32%;
   /* height: 90%; */
+}
+
+.home .info {
+  /* font-family: cursive; */
+  width: 500px;
+  background: radial-gradient(#39f7d0, #42eb86);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.home .info h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.home .info p {
+  font-size: 15px;
+  /* font-family: "Inter",sans-serif !important; */
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  text-align: center;
 }
 
 .home .referral {
