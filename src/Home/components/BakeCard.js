@@ -183,13 +183,22 @@ export default function BakeCard() {
     <div>
       <div className="auxContent">
         <div className="box leftBox contractInfoCard" >
+          <div style={{display: "flex"}}>
+            <div>
+              {<div className="dataRow">
+              <div className="name"><h5></h5>
+              </div>
+            </div>}
+            </div>
+          </div>
         
         <div className="mt-5"></div>
           <div style={{display: "flex"}}>
             <img src={treasuryImg}></img>
             <div>
               {<div className="dataRow">
-              <div className="name"><h5>CaiFarm Contract TVL: </h5>
+              <div className="name"><h5>CaiFarm 
+                Contract: </h5>
               </div>
               <div className="value"><h5>{contractBNB} ECH</h5></div>
             </div>}
@@ -229,7 +238,7 @@ export default function BakeCard() {
           </Typography>
           <Typography variant="h4" style={{color:"purple", fontFamily:"monospace", fontSize:"16px"}}>
             <div>
-              <h5><b>RE-GRILL 6 Days/week and EAT 1 Day/week</b></h5>
+              <h5><b>RE-GRILL/COMPOUND 6 Days/week and EAT/HARVEST REWARDS 1 Day/week</b></h5>
             </div>
           <div>
           <h4><b></b></h4>
@@ -268,7 +277,7 @@ export default function BakeCard() {
                   disabled={wrongNetwork || !address || +bakeBNB === 0 || loading}
                   onClick={bake}
                 >
-                  <b>♨️ GRILL FISH / BUY ♨️</b>
+                  <b>♨️GRILL FISH / BUY♨️</b>
                 </Button>
               </Box>
               <Typography variant="h6" style={{color:"green", fontFamily:"monospace", fontSize:"6px"}}>
@@ -288,7 +297,7 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={reBake}
                   >
-                    <b>💱 RE-GRILL / COMPOUND 💱</b>
+                    <b>💱RE-GRILL / COMPOUND💱</b>
                   </Button>
                 </Grid>
                 <Grid item flexGrow={1} marginLeft={0} marginTop={4}>
@@ -300,7 +309,7 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={eatBeans}
                   >
-                    <b>🍴 EAT FISH / HARVEST REWARDS 🍴</b>
+                    <b>🍴EAT FISH / HARVEST REWARDS🍴</b>
                   </Button>
                 </Grid>
               </ButtonContainer>}
@@ -308,7 +317,7 @@ export default function BakeCard() {
             <div className="mt-5"></div>
               {/* <Divider /> */}
               {<div className="dataRow">
-                <div className="rewards"><h2><b>💰 Rewards:</b></h2></div>
+                <div className="rewards"><h2><b>💰Your Rewards:</b></h2></div>
                 <div className="value"><h2><b>{walletBalance.rewards} ECH</b></h2></div>
               </div>}
           </div>
