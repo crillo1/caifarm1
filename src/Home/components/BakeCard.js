@@ -183,15 +183,15 @@ export default function BakeCard() {
     <div>
       <div className="auxContent">
         <div className="box leftBox contractInfoCard" >
+        
         <div className="mt-5"></div>
           <div style={{display: "flex"}}>
             <img src={treasuryImg}></img>
             <div>
               {<div className="dataRow">
-              <div className="name"><h5>CaiFarm Contract</h5>
+              <div className="name"><h5>CaiFarm Contract TVL: </h5>
               </div>
               <div className="value"><h5>{contractBNB} ECH</h5></div>
-
             </div>}
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function BakeCard() {
               <div className="value"><h4><b>{walletBalance.bnb}💜</b></h4>  </div>
             </div>
             <div className="dataRow">
-              <div className="name"> <h5><b>Your fishes:</b></h5></div>
+              <div className="name"> <h5><b>Your fish/TVL:</b></h5></div>
               <div className="value"><h4><b>{walletBalance.beans}🐟</b></h4></div>
             </div>
 
@@ -268,7 +268,7 @@ export default function BakeCard() {
                   disabled={wrongNetwork || !address || +bakeBNB === 0 || loading}
                   onClick={bake}
                 >
-                  <b>♨️ GRILL FISH ♨️</b>
+                  <b>♨️ GRILL FISH / BUY ♨️</b>
                 </Button>
               </Box>
               <Typography variant="h6" style={{color:"green", fontFamily:"monospace", fontSize:"6px"}}>
@@ -279,7 +279,7 @@ export default function BakeCard() {
             </div>
           </Typography>
               {<ButtonContainer container>
-                <Grid item flexGrow={1} marginRight={1} marginTop={3}>
+                <Grid item flexGrow={1} marginRight={0} marginTop={4}>
                   <Button
                     className="button1"
                     variant="contained"
@@ -288,10 +288,10 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={reBake}
                   >
-                    <b>💱 RE-GRILL 💱</b>
+                    <b>💱 RE-GRILL / COMPOUND 💱</b>
                   </Button>
                 </Grid>
-                <Grid item flexGrow={1} marginLeft={1} marginTop={3}>
+                <Grid item flexGrow={1} marginLeft={0} marginTop={4}>
                   <Button
                     className="button1"
                     variant="contained"
@@ -300,7 +300,7 @@ export default function BakeCard() {
                     disabled={wrongNetwork || !address || loading}
                     onClick={eatBeans}
                   >
-                    <b>🍴 EAT FISH 🍴</b>
+                    <b>🍴 EAT FISH / HARVEST REWARDS 🍴</b>
                   </Button>
                 </Grid>
               </ButtonContainer>}
@@ -308,8 +308,8 @@ export default function BakeCard() {
             <div className="mt-5"></div>
               {/* <Divider /> */}
               {<div className="dataRow">
-                <div className="rewards"><h3><b>💰 Rewards:</b></h3></div>
-                <div className="value"><h3><b>{walletBalance.rewards} ECH</b></h3></div>
+                <div className="rewards"><h2><b>💰 Rewards:</b></h2></div>
+                <div className="value"><h2><b>{walletBalance.rewards} ECH</b></h2></div>
               </div>}
           </div>
         </div>

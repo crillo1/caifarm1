@@ -6,8 +6,8 @@ const BnbInput = styled("input")({
   fontSize: 25,
   fontWeight: 500,
   padding: "8px 30px 8px 20px",
-  textAlign: "center",
-  color: "#be4ce4e",
+  textAlign: "left",
+  color: "purple",
   borderRadius: 5,
   border: "2px solid #f0f0f0",
   background: "#7efadf",
@@ -22,18 +22,18 @@ const BnbInput = styled("input")({
 
 export default function PriceInput({ value, max, onChange = () => {} }) {
   return (
-    <Box position="relative" style={{marginTop:"30px"}}>
+    <Box position="relative" style={{marginTop:"20px"}}>
       
       <Typography
-        fontSize={25}
+        fontSize={20}
         position="absolute"
-        top={9}
-        right={18}
+        top={16}
+        right={15}
         fontWeight={400}
-        color="#be4ce4"
-        fontFamily={"sans-serif"}
+        color="black"
+        fontFamily={"monospace"}
       >
-        <b>ECH amount</b>
+        <b>⬅️ Enter ECH/BUY amount</b>
       </Typography>
 
       <BnbInput
