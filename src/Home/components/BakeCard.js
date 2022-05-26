@@ -271,7 +271,13 @@ export default function BakeCard() {
                   <b>♨️ GRILL FISH ♨️</b>
                 </Button>
               </Box>
-
+              <Typography variant="h5" style={{color:"red", fontFamily:"monospace", fontSize:"12px"}}>
+            <h5><b>
+            * Before investing, read the whitepaper, look thru the source code or ask in telegram to make sure you know how a miner works and how to use it effectively with the basic 6/1 strategy. Once you deposit you cannot "unstake" your TVL, it will be safely locked inside the contract.</b></h5>
+          <div>
+          <h4><b></b></h4>
+            </div>
+          </Typography>
               {<ButtonContainer container>
                 <Grid item flexGrow={1} marginRight={1} marginTop={3}>
                   <Button
